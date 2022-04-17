@@ -1,0 +1,21 @@
+https://www.educative.io/blog/google-coding-interview
+
+https://www.educative.io/blog/coding-interivew-preparation-bootcamp
+https://www.educative.io/blog/google-coding-interview-questions
+
+Advanced bash scripting: https://tldp.org/LDP/abs/html/
+
+
+for ((i=0;i<N;i++)); do read a[$i]; done ## To read as array.
+
+for i in ${a[@]}; do  ## To use an array.
+sum=$((sum+i)) ; done  ## sum of an array.
+
+printf "%.3f" `echo $a/$b | bc -l` ## Print expression with 3 decimal.
+
+printf "%.3f" `echo $math_expression | bc -l` ## Calculate a maths expression. 
+
+for i in {1..99} ; do if [[ $((i%2)) == 1 ]] ; then echo $i ;fi ; done ## odd numbers. 
+
+a(){ echo $#, $@ ; } ; x=1;y=2 ; b=$(a $x $y) ; echo $b ## output 2, 1 2 ## Sub shell can have variables. 
+
