@@ -19,3 +19,6 @@ for i in {1..99} ; do if [[ $((i%2)) == 1 ]] ; then echo $i ;fi ; done ## odd nu
 
 a(){ echo $#, $@ ; } ; x=1;y=2 ; b=$(a $x $y) ; echo $b ## output 2, 1 2 ## Sub shell can have variables. 
 
+cut -d $'\t' -f3 ## "$" is to specify special delimeters. | -f1-3, -f3- (3nd field to last), -f-3 (first 3 fields)
+cut -c1 ## To print first character in a given string. 
+-c1,2,3 = -c1-3 , -c3- (3char to last), -c-3 (first 3 chars)
